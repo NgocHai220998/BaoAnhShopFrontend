@@ -1,0 +1,72 @@
+.card__job__post {
+  position: relative;
+  @include breakpoint(mdDown) {
+    width: 50%;
+  }
+  @include breakpoint(smDown) {
+    width: 100%;
+  }
+
+  &__date {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    background-color: #cfcfcf;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    &__icon {
+      font-size: 14px !important;
+    }
+    &__time {
+      font-size: 14px;
+      margin-left: 5px;
+      font-weight: 600;
+    }
+  }
+  &__like {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  &__title {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    line-height: 1.4;
+    color: black;
+    font-size: 15px;
+  }
+
+  &__company {
+    line-height: 1.5;
+    font-weight: 600;
+    color: $color-gray-light;
+    font-size: 14px;
+  }
+  &__location {
+    line-height: 1.5;
+    font-weight: 600;
+    color: $color-gray-light;
+    font-size: 14px;
+  }
+  &__bottom {
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__salary {
+      color: $baseColor;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    &__apply {
+      background-color: $baseColor !important;
+      color: #fff !important;
+      padding-left: 1.5em !important;
+      padding-right: 1.5em !important;
+      border-radius: 20px !important;
+    }
+  }
+}

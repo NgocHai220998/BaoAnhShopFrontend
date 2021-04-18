@@ -1,0 +1,28 @@
+.job__post {
+  background-color: #fff;
+  &__content {
+    padding: 0em 6em 0em 6em;
+    @include breakpoint(mdDown) {
+      padding: 0em 1em 0em 1em;
+    }
+  }
+  &__pagination {
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+    &--prev {
+      background-color: $color-gray-light !important;
+      border-radius: 20px !important;
+      color: #fff !important;
+      padding: 0.5em 2em !important;
+      margin: 0 0.5em !important;
+    }
+    &--next {
+      background-color: $baseColor !important;
+      border-radius: 20px !important;
+      color: #fff !important;
+      padding: 0.5em 2em !important;
+      margin: 0 0.5em !important;
+    }
+  }
+}

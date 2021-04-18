@@ -1,0 +1,15 @@
+@import "~react-perfect-scrollbar/dist/css/styles.css";
+
+// abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// base
+@import "base/reset";
+
+
+// components
+@import "components/CardJobPost";
+
+// views
+@import "views/JobPosting";

@@ -1,0 +1,29 @@
+.job__company {
+  overflow: hidden;
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+  }
+  &__title {
+    font-weight: 400;
+    text-align: right;
+    width: 100%;
+    @include breakpoint(mdDown) {
+      text-align: left;
+    }
+  }
+  small {
+    color: $color-gray;
+    text-align: right;
+    @include breakpoint(mdDown) {
+      text-align: left;
+    }
+  }
+  & * textarea::placeholder,
+  input::placeholder {
+    color: $color-gray;
+  }
+}

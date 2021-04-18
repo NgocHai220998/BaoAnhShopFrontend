@@ -1,0 +1,41 @@
+/*********************
+BREAKPOINTS
+*********************/
+@mixin breakpoint($point) {
+  /***
+    Breakpoint Up
+   */
+  @if $point == xlDown {
+    @media (max-width: 1919px)  { @content ; }
+  }
+  @else if $point == lgDown {
+    @media (max-width: 1279px)  { @content ; }
+  }
+  @else if $point == mdDown {
+    @media (max-width: 959px)  { @content ; }
+  }
+  @else if $point == smDown {
+    @media (max-width: 599px)  { @content ; }
+  }
+  @else if $point == xsDown {
+    @media (max-width: 320px)  { @content ; }
+  }
+    /***
+      Breakpoint Down
+     */
+  @else if $point == xlUp {
+    @media (min-width: 1920px)  { @content ; }
+  }
+  @else if $point == lgUp {
+    @media (min-width: 1280px)  { @content ; }
+  }
+  @else if $point == mdUp {
+    @media (min-width: 960px)  { @content ; }
+  }
+  @else if $point == smUp {
+    @media (min-width: 600px)  { @content ; }
+  }
+  @else if $point == xsUp {
+    @media (max-width: 321px)  { @content ; }
+  }
+}
